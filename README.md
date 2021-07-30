@@ -1,5 +1,3 @@
-### Hi there 👋
-
 # Stimuli. 
 
 We conducted an IRB-approved data collection of the viewport pose for desktop, headset, and phone-based VRs, with open-source VR games from Unity store, containing 1 indoor (Office) and 2 outdoor (Viking village, Lite) scenarios. Main characteristics of these VR games with different scene complexities. In desktop VR, rotational and translational movements are made using the mouse and up arrow key. The poses in headset VR are collected with a standalone Oculus Quest 2, where rotational and translational movements are made by moving the head and by using the controller thumbstick. In the phone-based VR, in-lab experiment uses Pixel 2 XL with Android 9, and rotational and translational movements are made by moving the motion-sensor-equipped phone and by tapping on the screen using one finger.
