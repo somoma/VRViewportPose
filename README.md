@@ -9,5 +9,7 @@ In desktop VR, the participants are seated in front of a PC, and use the up arro
 
 
 [1] Unity Asset Store. (2020) Office. https://assetstore.unity.com/packages/3d/environments/snapsprototype-office-137490
+
 [2] Unity Technologies. (2015) Viking village. https://assetstore.unity.com/packages/essentials/tutorialprojects/viking-village-29140
+
 [3] Xiaolianhua Studio. (2017) Lite. https://assetstore.unity.com/packages/3d/environments/fantasy/makeyour-fantasy-game-lite-8312
