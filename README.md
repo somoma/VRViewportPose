@@ -80,7 +80,7 @@ VR_Pose
 │   └───Lite_Oculus_1.txt
 ```
 
-There are also **3** sub-folders corresponding to the different VR interfaces. In each subfolder, there are only **3** TXT files, corresponding to **1** participants experienceing **3** VR games. ***The full dataset will be published upon the publication of my manuscript.***
+There are also **3** sub-folders corresponding to the different VR interfaces. In each subfolder, there are only **3** TXT files, corresponding to **1** participant experienceing **3** VR games. ***The full dataset will be published upon the publication of my manuscript.***
 
 ## 3. <span id="3">Extract the Orientation and Position Models</span>
 
