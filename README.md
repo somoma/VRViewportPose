@@ -131,6 +131,6 @@ The position model script is provided via https://github.com/VRViewportPose/VRVi
 
 [3] Xiaolianhua Studio. (2017) Lite. https://assetstore.unity.com/packages/3d/environments/fantasy/makeyour-fantasy-game-lite-8312
 
-[4]  Oculus.(2021) Oculus Quest 2. https://www.oculus.com/quest-2/
+[4]  Oculus. (2021) Oculus Quest 2. https://www.oculus.com/quest-2/
 
 [5] I. Rhee, M. Shin, S. Hong, K. Lee, and S. Chong, “On the levy-walk nature of human mobility,” in *IEEE INFOCOM*, 2008.
