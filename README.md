@@ -2,15 +2,18 @@
 
 ## Outline
 
-*  [Data Collection Setup](#1)
+*  [Data Collection](#1)
 * [Download the Dataset](#2)
 * [Extract the Orientation and Position Models](#3)
 
 
-## 1. <span id="1"> Data Collection Setup </span> 
+## 1. <span id="1"> Data Collection </span> 
+
+We conducted an IRB-approved data collection of the viewport pose.
+
 ### 1.1 Stimuli
 
-We conducted an IRB-approved data collection of the viewport pose for desktop, headset, and phone-based VRs, with open-source VR games from Unity store, containing 1 indoor (Office [1]) and 2 outdoor (Viking village [2], Lite [3]) scenarios. Main characteristics of these VR games with different scene complexities. In desktop VR, rotational and translational movements are made using the mouse and up arrow key. The poses in headset VR are collected with a standalone Oculus Quest 2, where rotational and translational movements are made by moving the head and by using the controller thumbstick. In the phone-based VR, in-lab experiment uses Pixel 2 XL with Android 9, and rotational and translational movements are made by moving the motion-sensor-equipped phone and by tapping on the screen using one finger.
+We collected the viewport pose for desktop, headset, and phone-based VRs, with open-source VR games from Unity store, containing 1 indoor (Office [1]) and 2 outdoor (Viking village [2], Lite [3]) scenarios. Main characteristics of these VR games with different scene complexities. In desktop VR, rotational and translational movements are made using the mouse and up arrow key. The poses in headset VR are collected with a standalone Oculus Quest 2, where rotational and translational movements are made by moving the head and by using the controller thumbstick. In the phone-based VR, in-lab experiment uses Pixel 2 XL with Android 9, and rotational and translational movements are made by moving the motion-sensor-equipped phone and by tapping on the screen using one finger.
 
 <p align="center">
      <img src="https://github.com/VRViewportPose/VRViewportPose/blob/main/Stimuli.png" width = "800" height = "250" hspace="0"/>
@@ -21,7 +24,7 @@ Figure 1: Open-source VR games used for the data collection: (a) Office; (b) Vik
 
 ### 1.2 Procedure
 
-In desktop VR, the participants are seated in front of a PC, and use the up arrow key and mouse to perform translational and rotational movement, respectively. In headset VR, each participant wears a standalone Oculus Quest 2 [4] headset, and makes rotational movement by moving her head, and makes translational movement using the  controller thumbstick. In phone-based VR, the participant makes rotational movement by moving the motion-sensor-equipped phone, and makes translational movement by tapping on the screen using one finger. Considering the device computation capability and the screen fresh rate, the timestamp and viewport pose of each participant are recorded at a target frame rate of 60 Hz, 72 Hz, and 60 Hz for desktop, headset, and phone-based VR, respectively. For each frame, we record the timestamp, the *x, y, z* positions and the roll, pitch, and yaw Euler orientation angles. For the Euler orientation angles <a href="https://www.codecogs.com/eqnedit.php?latex=(\beta,&space;\gamma,&space;\alpha)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(\beta,&space;\gamma,&space;\alpha)" title="(\beta, \gamma, \alpha)" /></a>, the intrinsic rotation orders are adopted, i.e., the viewport pose is rotated <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> degrees around the *z*-axis, <a href="https://www.codecogs.com/eqnedit.php?latex=\beta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\beta" title="\beta" /></a> degrees around the *x*-axis, and <a href="https://www.codecogs.com/eqnedit.php?latex=\gamma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\gamma" title="\gamma" /></a> degrees around the *y*-axis. We randomize the initial viewport position in VR games over the whole bounding area. We fix the initial polar angle of the viewport to be 90 degree, and uniformly randomize the initial azimuth angle on [-180,180) degree.
+The data collection, conducted under COVID-19 restrictions, involved unaided and Zoom-supported remote data collection by distributing desktop and phone-based VR apps, and a small number of socially distanced in-lab experiments for headset and phone-based VRs. We recorded the viewport poses of 20 participants (9 male, 11 female, age 20-48), 5 participants (2 male, 3 female, age 23-33), and 5 participants (3 male, 2 female, age 23-33) in desktop, headset, and phone-based VRs, respectively. The participants were seated in front of a PC, wore the headset while standing, and held a phone in landscape mode while standing in desktop, headset, and phone-based VRs, respectively. For desktop and phone-based VRs, each participant explored VK, Lite, and Office for 5, 5, and 2 minutes, respectively. For headset VR, the participants only explored each game for 2 minutes to avoid simulator sickness. Considering the device computation capability and the screen fresh rate, the timestamp and viewport pose of each participant are recorded at a target frame rate of 60 Hz, 72 Hz, and 60 Hz for desktop, headset, and phone-based VR, respectively. For each frame, we record the timestamp, the *x, y, z* positions and the roll, pitch, and yaw Euler orientation angles. For the Euler orientation angles <a href="https://www.codecogs.com/eqnedit.php?latex=(\beta,&space;\gamma,&space;\alpha)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(\beta,&space;\gamma,&space;\alpha)" title="(\beta, \gamma, \alpha)" /></a>, the intrinsic rotation orders are adopted, i.e., the viewport pose is rotated <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> degrees around the *z*-axis, <a href="https://www.codecogs.com/eqnedit.php?latex=\beta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\beta" title="\beta" /></a> degrees around the *x*-axis, and <a href="https://www.codecogs.com/eqnedit.php?latex=\gamma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\gamma" title="\gamma" /></a> degrees around the *y*-axis. We randomize the initial viewport position in VR games over the whole bounding area. We fix the initial polar angle of the viewport to be 90 degree, and uniformly randomize the initial azimuth angle on [-180,180) degree.
 
 ## 2. <span id="2">Download the Dataset</span>
 
@@ -80,7 +83,7 @@ VR_Pose
 │   └───Lite_Oculus_1.txt
 ```
 
-There are also **3** sub-folders corresponding to the different VR interfaces. In each subfolder, there are only **3** TXT files, corresponding to **1** participant experienceing **3** VR games. ***The full dataset will be published upon the publication of my manuscript.***
+There are also **3** sub-folders corresponding to the different VR interfaces. In each subfolder, there are only **3** TXT files, corresponding to **1** participant experienceing **3** VR games. ***The full dataset will be published upon the publication of the manuscript.***
 
 ## 3. <span id="3">Extract the Orientation and Position Models</span>
 
@@ -133,4 +136,4 @@ The position model script is provided via https://github.com/VRViewportPose/VRVi
 
 [4]  Oculus. (2021) Oculus Quest 2. https://www.oculus.com/quest-2/
 
-[5] I. Rhee, M. Shin, S. Hong, K. Lee, and S. Chong, “On the levy-walk nature of human mobility,” in *IEEE INFOCOM*, 2008.
+[5] I. Rhee, M. Shin, S. Hong, K. Lee, and S. Chong, “On the Levy-walk nature of human mobility,” in *IEEE INFOCOM*, 2008.
