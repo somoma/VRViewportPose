@@ -134,7 +134,7 @@ The position model script is provided via https://github.com/VRViewportPose/VRVi
 
 The codes for analyzing dataset samples can be download [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/ViS_Analysis.zip).
 
-1. You will see three files after extracting the ZIP file. `Analysis_Visibility_Similarity.m` sets the parameters for the orientation model, position model, and the visimibility similarity model, and calculates the analytical results  of visimibility similarity. `calculate_m_k.m` calculates the *k*-th moment of the position displacement, and `calculate_hypergeom.m` is used to calculate the hypergeometric function.
+1. You will see three files after extracting the ZIP file. `Analysis_Visibility_Similarity.m` sets the parameters for the orientation model, position model, and the visibility similarity model, and calculates the analytical results  of visibility similarity. `calculate_m_k.m` calculates the *k*-th moment of the position displacement, and `calculate_hypergeom.m` is used to calculate the hypergeometric function.
 2. Run the `Analysis_Visibility_Similarity.m`. You can get the analytical results of visibility similarity.
 
 ***The full simulation and implementation codebase will be publicly available upon the publication of the manuscript.***
